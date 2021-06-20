@@ -1,9 +1,6 @@
 import './App.css';
 
 
-function App() {
-  const [todos, setTodos] = useState([])
-  const [input, setInput] = useState("")
   return (
     <div className="App">
  <header>
