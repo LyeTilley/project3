@@ -1,0 +1,26 @@
+body {
+  margin: 100px 10px 10px 10px;
+  font-family: "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+  background-color: rgb(200, 186, 204);
+  border-radius: 2px;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  
+}
+
+code {
+  font-family:  "Courier New",
+    monospace;
+}
+
+h1 {
+  color: green;
+}
+
+div {
+  border: black 2px;
+}
