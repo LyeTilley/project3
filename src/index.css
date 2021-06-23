@@ -1,26 +1,59 @@
 body {
   margin: 100px 10px 10px 10px;
+  padding-left: 58%;
   font-family: "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    "Ubuntu";
 
-  background-color: rgb(200, 186, 204);
-  border-radius: 2px;
-  display: grid;
-  height: 100vh;
-  place-items: center;
+    /* background-image: url("paper.gif"); */
+  /* border-radius: 2px;
+  /* display: grid;
+  height: 100vh; */
+
+  
+background-image: url("https://telltaletv.com/wp-content/uploads/2018/06/theoffice2.gif");
+position: absolute;;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
   
 }
 
+
+
 code {
-  font-family:  "Courier New",
-    monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-  color: green;
+
+  color: black;
+}
+
+h2 {
+  color: rgb(5, 5, 5);
 }
 
 div {
-  border: black 2px;
+  border: rgb(61, 9, 9) 2px;
+}
+
+
+.button {
+  background-color: red;
+  border: 1px solid #00000042;
+}
+
+
+.listItemText {
+  size: 2rem;
+}
+
+div {
+  font-size: 1.5rem;
+}
+
+
+.secondary {
+  font-size: 2rem;
 }

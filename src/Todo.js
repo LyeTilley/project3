@@ -17,8 +17,10 @@ export default function TodoListItem({ todo, inprogress, id }) {
     <div style={{ display: "flex" }}>
       <ListItem>
         <ListItemText
-          primary={todo}
-          secondary={inprogress ? "Keep going..." : "DONE!"}
+                  primary={todo}
+          secondary={inprogress ? "Click 'I have completed', or ' X ' when complete" : "DONE!"
+        
+        }
         />
       </ListItem>
 

@@ -47,10 +47,13 @@ function App() {
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
+        
         }}
       >
-        <h1>LYLE'S TO-DO APP!
+        <h1> GIT 'ER DONE APP 
         </h1>
+
+        <h2>⬇️ ToDo List   ⬇️ </h2>
         <form>
           <TextField
             id="standard-basic"
@@ -63,9 +66,9 @@ function App() {
             type="submit"
             variant="contained"
             onClick={addTodo}
-            style={{ display: "none" }}
+            style={{ display: "block" }}
           >
-            Default
+            Press or hit enter to add ToDo
           </Button>
         </form>
 
