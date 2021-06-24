@@ -64,10 +64,9 @@ function App() {
             id="standard-basic"
             label="Please write here!"
             color="secondary"
-            style="white"
             value={todoInput}
             style={{ width: "100vw", maxWidth: "500px" }}
-            onChange={(e) => setTodoInput(e.target.value)}
+      onChange={(e) => setTodoInput(e.target.value)}
 
 
 

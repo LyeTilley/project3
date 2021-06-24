@@ -39,5 +39,4 @@ export default function TodoListItem({ todo, inprogress, id }) {
     </div>
   );
 
-  <footer>LYLE TILLEY 2021</footer>
 }
