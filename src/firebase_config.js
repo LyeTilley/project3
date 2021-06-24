@@ -12,6 +12,8 @@ var firebaseConfig = {
 };
 
 
+// const ?
+
 firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();

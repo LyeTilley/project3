@@ -1,4 +1,7 @@
 import React from "react";
+
+// add in material UI and firebase ----
+
 import { ListItem, ListItemText, Button } from "@material-ui/core";
 import { db } from "./firebase_config";
 
@@ -16,8 +19,11 @@ export default function TodoListItem({ todo, inprogress, id }) {
   return (
     <div style={{ display: "flex" }}>
       <ListItem>
+        
+        
         <ListItemText
-                  primary={todo}
+        color="primary"
+        primary={todo}
           secondary={inprogress ? "Click 'I have completed', or ' X ' when complete" : "DONE!"
         
         }
@@ -25,9 +31,13 @@ export default function TodoListItem({ todo, inprogress, id }) {
       </ListItem>
 
       <Button onClick={toggleInProgress}>
-        {inprogress ? "I have completed!" : "UnDone"}
+        
+        {inprogress ? "I have completed!" : "UnDo"}
+        
       </Button>
       <Button onClick={deleteTodo}>X</Button>
     </div>
   );
+
+  <footer>LYLE TILLEY 2021</footer>
 }

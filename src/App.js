@@ -6,13 +6,16 @@ import { db } from "./firebase_config";
 import firebase from "firebase";
 import TodoListItem from "./Todo";
 
+
 function App() {
   const [todos, setTodos] = useState([]);
   const [todoInput, setTodoInput] = useState("");
 
   useEffect(() => {
     getTodos();
-  }, []); // blank to run only on first launch
+
+
+  }, []); 
 
   function getTodos() {
     db.collection("todos").onSnapshot(function (querySnapshot) {
@@ -58,17 +61,25 @@ function App() {
           <TextField
             id="standard-basic"
             label="Please write here!"
+            color="secondary"
+            style="white"
             value={todoInput}
-            style={{ width: "90vw", maxWidth: "500px" }}
+            style={{ width: "120vw", maxWidth: "500px" }}
             onChange={(e) => setTodoInput(e.target.value)}
+
+
+
           />
           <Button
+          size="large"
             type="submit"
             variant="contained"
+            color="primary"
+            
             onClick={addTodo}
             style={{ display: "block" }}
           >
-            Press or hit enter to add ToDo
+            Press or hit enter to add task
           </Button>
         </form>
 
@@ -80,9 +91,20 @@ function App() {
               id={todo.id}
             />
           ))}
+
+
+<footer>
+        
+        <p>Created at <a href="http://www.junocollege.com"> JUNO College</a> (2021) by Lyle Tilley - Cohort 34</p>
+
+    </footer>
+
         </div>
       </div>
     </div>
+
+
+    
   );
 }
 
