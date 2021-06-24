@@ -52,6 +52,8 @@ function App() {
           width: "100%",
         
         }}
+
+        // eslint-disable-next-line 
       >
         <h1> GIT 'ER DONE APP 
         </h1>
@@ -64,7 +66,7 @@ function App() {
             color="secondary"
             style="white"
             value={todoInput}
-            style={{ width: "120vw", maxWidth: "500px" }}
+            style={{ width: "100vw", maxWidth: "500px" }}
             onChange={(e) => setTodoInput(e.target.value)}
 
 
